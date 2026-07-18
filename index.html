@@ -263,8 +263,8 @@
       scene: "ferry", mode: "ferry", transport: "Kurze Fahrt zum Fährhafen Sassnitz, Überfahrt, dann ans Basislager – danach bleibt das WoMo stehen.",
       duration: "Prora → Sassnitz ~35 Min · Fähre 3:20 Std · Rønne → Gudhjem ~40 Min",
       ferry: { title: "Hinfahrt mit Bornholmslinjen", from: "Sassnitz", to: "Rønne", dep: "Sa 15. Aug · 11:50",
-        arr: "ca. 15:10 (3 Std. 20 Min.)", resv: "73363945",
-        note: "Check-in bis 20 Min. vor Abfahrt (Self-Check-in, Kennzeichen MBMT1990). Barcode der Reservierung bereithalten." },
+        arr: "ca. 15:10 (3 Std. 20 Min.)", resv: "",
+        note: "Check-in bis 20 Min. vor Abfahrt (Self-Check-in). Barcode der Reservierung bereithalten." },
       stay: BASECAMP,
       sights: [
         { t: "Ankunft im Hafen von Rønne", d: "Größte Stadt der Insel – bunte Fachwerkhäuser rund um den Hafen." },
@@ -382,7 +382,7 @@
       scene: "ferry", mode: "ferry", transport: "Früh mit dem Wohnmobil nach Rønne, dann mit der Fähre zurück aufs Festland.",
       duration: "Gudhjem → Rønne ~45 Min · Fähre 3:20 Std",
       ferry: { title: "Rückfahrt mit Bornholmslinjen", from: "Rønne", to: "Sassnitz", dep: "Mo 24. Aug · 08:00",
-        arr: "ca. 11:20 (3 Std. 20 Min.)", resv: "73375513",
+        arr: "ca. 11:20 (3 Std. 20 Min.)", resv: "",
         note: "Von Gudhjem nach Rønne ca. 45 Min. Fahrt – rechtzeitig los. Wohnmobile werden zuerst verladen." },
       stay: { name: "Heimreise", addr: null, note: "Ende der Bornholm-Woche – zurück über Sassnitz Richtung Heimat.", maps: null },
       sights: [
@@ -405,10 +405,10 @@
     {
       title: "Fähre – Hin & zurück",
       rows: [
-        ["Hinfahrt", "Sa 15. Aug 2026, 11:50 · Sassnitz → Rønne · Res. 73363945"],
-        ["Rückfahrt", "Mo 24. Aug 2026, 08:00 · Rønne → Sassnitz · Res. 73375513"],
+        ["Hinfahrt", "Sa 15. Aug 2026, 11:50 · Sassnitz → Rønne"],
+        ["Rückfahrt", "Mo 24. Aug 2026, 08:00 · Rønne → Sassnitz"],
         ["Dauer", "je ca. 3 Std. 20 Min. mit Bornholmslinjen"],
-        ["Check-in", "Self-Check-in, bis 20 Min. vor Abfahrt · Kennzeichen MBMT1990"]
+        ["Check-in", "Self-Check-in, bis 20 Min. vor Abfahrt"]
       ],
       note: "Barcode der Reservierung am Automaten bereithalten, falls das Kennzeichen nicht automatisch erkannt wird."
     },
@@ -669,7 +669,7 @@
         '<div class="fr"><span>Strecke</span><b>' + esc(f.from) + " → " + esc(f.to) + "</b></div>" +
         '<div class="fr"><span>Abfahrt</span><b>' + esc(f.dep) + "</b></div>" +
         '<div class="fr"><span>Ankunft</span><b>' + esc(f.arr) + "</b></div>" +
-        '<div class="fr"><span>Reservg.</span><b>' + esc(f.resv) + "</b></div></div>" +
+        (f.resv ? '<div class="fr"><span>Reservg.</span><b>' + esc(f.resv) + "</b></div>" : "") + "</div>" +
         (f.note ? '<p class="note">' + esc(f.note) + "</p>" : "") + "</div></div></div>";
     }
 

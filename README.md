@@ -22,11 +22,10 @@ Die URL in **Safari** oeffnen → **Teilen** → **Zum Home-Bildschirm**.
 Danach startet sie wie eine App im Vollbild und laedt auch ohne Internet.
 
 ## Wichtig (oeffentlich!)
-Ein normales GitHub-Pages-Repository ist **oeffentlich** – jeder mit der URL kann die Seite sehen,
-inklusive Familienfoto, Fährdaten, Reservierungsnummern und Kennzeichen.
-Wenn das nicht gewuenscht ist: sensible Angaben vorher entfernen (sag Bescheid, ich mache eine
-"oeffentliche" Fassung ohne diese Details) oder das Repository privat halten
-(Pages aus privaten Repos benoetigt GitHub Pro).
+Ein normales GitHub-Pages-Repository ist **oeffentlich** – jeder mit der URL kann die Seite sehen.
+In dieser oeffentlichen Fassung sind **Reservierungsnummern und das Kfz-Kennzeichen bereits entfernt**.
+Das **Familienfoto** ist weiterhin enthalten – wenn auch das nicht oeffentlich sein soll, sag Bescheid,
+dann nehme ich es heraus. Alternativ das Repository privat halten (Pages aus privaten Repos benoetigt GitHub Pro).
 
 ## Aenderungen spaeter
 Einfach die betroffene Datei im Repo ersetzen (Upload) und committen – die Seite aktualisiert sich.
